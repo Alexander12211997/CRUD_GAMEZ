@@ -297,7 +297,7 @@ public class MainActivity extends AppCompatActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        if(id == R.id.action_listaArticulo){
+        if(id == R.id.action_listaArticulos){
             Intent spinnerActivity = new Intent(MainActivity.this, Consulta_RecyclerView.class);
             startActivity(spinnerActivity);
             return true;
@@ -306,13 +306,13 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
 
-        if (id == R.id.action_Acercad){
+        if (id == R.id.action_Acercade){
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
                     context);
             // Establecer el título
-            alertDialogBuilder.setTitle("Proyecto creado por:")
+            alertDialogBuilder.setTitle("Realizado por:")
                     // Establecer mensaje de diálogo
-                    .setMessage("Cristian Hernandez  \n SIS 22A")
+                    .setMessage("Anderson Bonilla  \n SIS 21A")
                     .setCancelable(false)
                     .setNegativeButton("Aceptar", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
